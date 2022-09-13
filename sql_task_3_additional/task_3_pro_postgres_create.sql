@@ -8,6 +8,6 @@ CREATE TABLE employees (
 CREATE TABLE departments (
 	id serial primary key,
 	name varchar(100) NOT NULL,
-	director_id integer references employees(id)
+	director_id integer references employees(id) NOT NULL
 );
 
